@@ -27,22 +27,23 @@ const Carousel: React.FC<CarouselProps> = ({ title, images }) => {
   };
 
   return (
-    <div className="relative w-full max-w-lg mx-auto">
-      <h2 className="text-center text-2xl font-bold mb-4">{title}</h2>
-      <div className="overflow-hidden rounded-lg">
+    <div className=" w-full  max-w-lg mx-auto bg-gray-200 p-4 rounded-lg mt-96">
+      <h2 className="text-center text-2xl font-bold mb-4 " >{title}</h2>
+      <div className=" flex items-center justify-center   overflow-hidden rounded-lg mb-4  h-60" >
         <img
           src={images[currentIndex].src}
           alt={images[currentIndex].alt}
-          className="w-full h-auto transition-transform duration-500 ease-in-out"
+          className="w-full object-contain transition-transform duration-500 ease-in-out"
         />
-        <p>
+
+      </div>
+        <p className="flex justify-center">
           {images[currentIndex].description}
         </p>
-      </div>
-      <div>
+      <div className="flex justify-between ">
+        <button onClick={prevSlide}>{"◀️"}</button>
         <button>{"⏸️"}</button>
-        <button onClick={prevSlide}>{"<"}</button>
-        <button onClick={nextSlide}>{">"}</button>
+        <button onClick={nextSlide}>{"▶️"}</button>
       </div>
     </div>
   );
