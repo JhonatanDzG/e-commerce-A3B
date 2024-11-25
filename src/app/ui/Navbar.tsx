@@ -9,7 +9,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className=" text-white fixed top-0 left-0 w-full bg-zinc-500 p-4 flex items-center justify-between z-10 mb-4">
+    <nav className=" text-white fixed top-0 left-0 w-full bg-zinc-500 p-4 flex items-center justify-between z-10 ">
       <h1>A3B</h1>
       <button>Store</button>
       <button onClick={toggleMenu}>Menu</button>

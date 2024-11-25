@@ -8,7 +8,8 @@ export default function Home() {
     {
       src: "/next.svg",
       alt: "next",
-      description: "Some description",
+      description: "Some descriptionSome descriptionSome descriptionvSome descriptionSome descriptionSome descriptionvvSome descriptionSome descriptionSome descriptionSome descriptionvSome descriptionvvvSome descriptionSome description",
+
     },
     {
       src: "/window.svg",
@@ -18,11 +19,13 @@ export default function Home() {
   ];
 
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <Navbar />
-      <div className="mt-24 top-full">
-        <Carousel title="Top pics" images={topPics} />
+    <>
+      <div>
+        <Navbar />
       </div>
-    </div>
+      <div className=" mt-20">
+        <Carousel title="Top pics" images={topPics}  />
+      </div>
+    </>
   );
 }
